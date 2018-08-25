@@ -1,0 +1,275 @@
+﻿body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+	white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+	max-width: 280px;
+}
+
+.logo-type {
+	padding-top: 5px;
+	padding-bottom: 0px;
+	height: 45px;
+}
+
+.flag {
+	padding-top: 17px;
+	padding-bottom: 17px;
+	height: 45px;
+	width: 32px;
+}
+
+	a:hover, .flag:hover {
+		cursor: pointer;
+	}
+
+div.toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	padding: .75rem 1rem;
+	margin-bottom: 1rem;
+	list-style: none;
+	background-color: #e9ecef;
+	border-radius: .25rem;
+}
+
+input.subjects-input, select.subjects-input {
+	display: block;
+	width: 100%;
+	height: calc(2.25rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+div.submit-btn {
+	color: #fff;
+	background-color: #6c757d;
+	border-color: #6c757d;
+}
+
+button.filter-btn, button.send-btn {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	padding: 4px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+	width: 24px;
+	height: 24px;
+}
+
+button.filter-btn {
+	/*right: 0;
+    margin-left: auto;
+    margin-right: 0;*/
+}
+
+div.filter {
+	padding: 5px 10px 5px 10px;
+	border-bottom: 1px solid #e9ecef;
+	width: 100%;
+	display: none;
+}
+
+	div.filter label {
+		font-weight: normal;
+	}
+
+div#searchResults, div#siteSearch ul, div#details_view {
+	flex: 1;
+	margin-left: 0;
+	width: 100%;
+}
+
+
+	ul#siteSearch > li, div#details_view > div.details-view {
+		display: flex;
+		text-align: -webkit-match-parent;
+		margin: 0;
+		background-color: #fafafa;
+		border-radius: 5px;
+		margin-bottom: 3px;
+		border-bottom: 1px solid #f2f0e8;
+	}
+
+ul#siteSearch > li {
+	padding: 10px !important;
+}
+
+div#details_view > div.details-view {
+	padding: 34px !important;
+}
+
+li div.bookcover, div.details-view div.bookcover {
+	text-align: right;
+	overflow: hidden;
+	min-width: 51px !important;
+	min-height: 70px !important;
+	width: auto !important;
+}
+
+span.add-tag {
+	display: inline-block;
+	margin-bottom: 0;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	padding: 0px 4px 0px 4px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5;
+	border-radius: 3px;
+	width: 24px;
+	height: 24px;
+	color: buttontext;
+	background-color: buttonface;
+}
+
+.searchResultItem .details, .details_view .details {
+	width: 100%;
+	padding: 5px;
+}
+
+div.details {
+	margin-left: 12px;
+}
+
+div.author {
+	font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
+	color: #625232;
+	font-size: 1.125em;
+}
+
+div.title > h1 {
+	font-size: 1.875em;
+	font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
+	color: #666666;
+	font-weight: 600;
+}
+
+ul#siteSearch div.resultTitle {
+	display: block;
+	margin: 0 !important;
+	font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
+	color: #666666;
+}
+
+div.resultTitle h3.booktitle {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	color: #333333;
+	font-size: 1.0em;
+	font-weight: 700;
+	font-family: "Lucida Grande", Verdana, Geneva, Helvetica, sans-serif;
+}
+
+.bookauthor {
+	font-family: "Lucida Grande", Verdana, Geneva, Helvetica, sans-serif;
+}
+
+ul#siteSearch div.resultPublisher {
+	display: block;
+}
+
+.searchResultItemCTA {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	display: flex;
+	width: 24px;
+	-webkit-box-align: stretch;
+	align-items: stretch;
+	justify-content: center;
+	padding: 5px;
+	align-self: flex-start;
+}
+
+path.favorite_star {
+	cursor: pointer;
+}
+
+div.paginator {
+	width: 100%;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+
+	div.paginator span {
+		cursor: pointer;
+		font-weight: bold;
+	}
+
+div.wait_panel {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: none;
+	background-color: #CCCCCC66;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 99999;
+}
+
+	div.wait_panel img {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		margin-top: -64px;
+		margin-left: -64px;
+	}
+
+span.tag {
+	background-color: #e9ecef;
+	padding: 3px 6px 3px 10px;
+	border-radius: 12px;
+}
+
+div#tags_section_container {
+	padding: 20px;
+}
